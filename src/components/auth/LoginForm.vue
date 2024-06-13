@@ -4,13 +4,13 @@
       <q-icon name="ti-heart" color="white" size="35px" />
       Clothes 4You
     </div>
-    <form action="#">
+    <form @submit.prevent="login">
       <div class="field">
-        <input type="text" required />
+        <input v-model="username" type="text" required />
         <label>User</label>
       </div>
       <div class="field">
-        <input type="password" required />
+        <input v-model="password" type="password" required />
         <label>Password</label>
       </div>
       <div class="content">
@@ -23,14 +23,39 @@
         </div>
       </div>
       <div class="field">
-        <input type="submit" value="Login" />
+        <q-btn label="Login" type="submit" color="red" class="custom-btn" />
       </div>
       <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
     </form>
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      username: "",
+      password: "",
+    };
+  },
+  methods: {
+    login() {
+      // Validar los campos de usuario y contraseña antes de enviar
+      if (this.username.trim() === "" || this.password.trim() === "") {
+        alert("Por favor completa los campos de usuario y contraseña.");
+        return;
+      }
+
+      // Aquí puedes agregar la lógica para enviar el formulario
+      console.log("Username:", this.username);
+      console.log("Password:", this.password);
+
+      // Simular redirección después de iniciar sesión
+      window.location.href = "http://localhost:9000/#/sales";
+    },
+  },
+};
+</script>
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
@@ -50,7 +75,7 @@ body {
   /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
 }
 ::selection {
-  background: #e7063f;
+  background: red;
   color: #fff;
 }
 .wrapper {
@@ -90,7 +115,7 @@ body {
 }
 .wrapper form .field input:focus,
 form .field input:valid {
-  border-color: #4158d0;
+  border-color: #d09741;
 }
 .wrapper form .field label {
   position: absolute;
@@ -174,7 +199,7 @@ form .signup-link a:hover {
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
-  background-color: red;
+  background-color: rgb(227, 17, 17);
   transition: all 0.3s ease;
   border-radius: 25px;
   width: 90%;
