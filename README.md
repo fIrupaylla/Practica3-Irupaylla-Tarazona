@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Practica3-Irupaylla-Tarazona
 =======
+=======
+>>>>>>> dev-irupaylla
 # Clothes Store (pc3-irupaylla-tarazona)
 
 Clothes Store
@@ -42,4 +45,7 @@ quasar build
 
 ### Customize the configuration
 See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+<<<<<<< HEAD
+>>>>>>> dev-irupaylla
+=======
 >>>>>>> dev-irupaylla
