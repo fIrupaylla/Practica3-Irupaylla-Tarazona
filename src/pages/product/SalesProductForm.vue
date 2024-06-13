@@ -107,17 +107,12 @@
               <q-img class="rounded-borders col-4 full-height" src="../../img_products/1-p.jpg" />
               <q-card-section class="text-center">
                 <q-card-text>
-<<<<<<< HEAD
-                    <q-text h4>MANGO</q-text h4>
-                    <q-text h6><br>$440.00</q-text h6> 
-=======
                     <q-text tag="h4">
                       MANGO DRESS
                       <br>
                       $ 250.00
                     </q-text>
                     
->>>>>>> dev-irupaylla
                 </q-card-text>
               </q-card-section>
             </q-card>
@@ -126,16 +121,11 @@
               <q-img class="rounded-borders col-4 full-height" src="../../img_products/3-p.jpg" />
               <q-card-section class="text-center">
                 <q-card-text>
-<<<<<<< HEAD
-                    <q-text h4>MANGO</q-text h4>
-                    <q-text h6>BOTTOMS<br>$440.00</q-text h6> 
-=======
                   <q-text tag="h4">
                       MANGO DRESS
                       <br>
                       $ 129.00
                     </q-text>
->>>>>>> dev-irupaylla
                 </q-card-text>
               </q-card-section>
             </q-card>
@@ -144,16 +134,11 @@
               <q-img class="rounded-borders col-4 full-height" src="../../img_products/2-p.jpg" />
               <q-card-section class="text-center">
                 <q-card-text>
-<<<<<<< HEAD
-                    <q-text h4>MANGO</q-text h4>
-                    <q-text h6>$440.00</q-text h6> 
-=======
                   <q-text tag="h4">
                       MANGO DRESS
                       <br>
                       $ 144.00
                     </q-text>
->>>>>>> dev-irupaylla
                 </q-card-text>
               </q-card-section>
             </q-card>
@@ -166,16 +151,11 @@
               <q-img class="rounded-borders col-4 full-height" src="../../img_products/5.jpg" />
               <q-card-section class="text-center">
                 <q-card-text>
-<<<<<<< HEAD
-                  <q-text h4>MANGO</q-text h4>
-                  <q-text h6>BOTTOMS<br>$440.00</q-text h6> 
-=======
                   <q-text tag="h4">
                       MANGO ONLY
                       <br>
                       $ 490.00
                     </q-text>
->>>>>>> dev-irupaylla
                 </q-card-text>
               </q-card-section>
             </q-card>
@@ -184,16 +164,11 @@
               <q-img class="rounded-borders col-4 full-height" src="../../img_products/6.jpg" />
               <q-card-section class="text-center">
                 <q-card-text>
-<<<<<<< HEAD
-                  <q-text h4>MANGO</q-text h4>
-                  <q-text h6>BOTTOMS<br>$440.00</q-text h6> 
-=======
                   <q-text tag="h4">
                       MANGO JACKET
                       <br>
                       $ 890.00
                     </q-text>
->>>>>>> dev-irupaylla
                 </q-card-text>
               </q-card-section>
             </q-card>
@@ -202,16 +177,11 @@
               <q-img class="rounded-borders col-4 full-height" src="../../img_products/5.jpg" />
               <q-card-section class="text-center">
                 <q-card-text>
-<<<<<<< HEAD
-                    <q-text h4>MANGO</q-text h4>
-                    <q-text h6>BOTTOMS<br>$440.00</q-text h6> 
-=======
                   <q-text tag="h4">
                       MANGO BUTTON
                       <br>
                       $ 380.00
                     </q-text>
->>>>>>> dev-irupaylla
                 </q-card-text>
               </q-card-section>
             </q-card>
