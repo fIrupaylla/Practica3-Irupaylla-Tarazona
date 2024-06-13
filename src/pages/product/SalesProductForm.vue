@@ -86,8 +86,73 @@
         </q-scroll-area>
       </q-drawer>
   
-      <q-page-container>
-        <router-view />
+      <q-page-container class="q-ma-md">
+        
+        <div class="q-pa-md">
+            <q-carousel
+            v-model="slide"
+            transition-prev="slide-right"
+            transition-next="slide-left"
+            swipeable
+            animated
+            control-color="red"
+            navigation
+            padding
+            arrows
+            height="100%"
+            class="bg-white-9 shadow-3 rounded-borders"
+            >
+            <q-carousel-slide :name="1" class="column no-wrap">
+                <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap" color="red">
+                    <q-card class="col-6 full-height">
+                        <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/mountains.jpg" />
+                        <q-card-section class="text-center">
+                            <q-card-text>
+                                <h4>Producto 1</h4>
+                                <h6>Precio: S/ 100</h6> 
+                            </q-card-text>
+                        </q-card-section>
+                    </q-card>
+                    
+                    <q-card class="col-6 full-height">
+                        <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/parallax1.jpg" />
+                        <q-card-section class="text-center">
+                            <q-card-text>
+                                <h4>Producto 1</h4>
+                                <h6>Precio:$100</h6> 
+                            </q-card-text>
+                        </q-card-section>
+                    </q-card>
+                    
+                </div>
+            </q-carousel-slide>
+            <q-carousel-slide :name="2" class="column no-wrap">
+                <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap" color="red">
+                    <q-card class="col-6 full-height">
+                        <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/mountains.jpg" />
+                        <q-card-section class="text-center">
+                            <q-card-text>
+                                <h4>Producto 1</h4>
+                                <h6>Precio: S/ 100</h6> 
+                            </q-card-text>
+                        </q-card-section>
+                    </q-card>
+                    
+                    <q-card class="col-6 full-height">
+                        <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/parallax1.jpg" />
+                        <q-card-section class="text-center">
+                            <q-card-text>
+                                <h4>Producto 1</h4>
+                                <h6>Precio:$100</h6> 
+                            </q-card-text>
+                        </q-card-section>
+                    </q-card>
+                    
+                </div>
+            </q-carousel-slide>
+            </q-carousel>
+        </div>
+        
       </q-page-container>
     </q-layout>
   </template>
@@ -99,16 +164,19 @@
     name: 'MyLayout',
   
     setup () {
+
+     
+      const slide = ref(1) 
       const leftDrawerOpen = ref(false)
       const search = ref('')
-  
+        
       function toggleLeftDrawer () {
         leftDrawerOpen.value = !leftDrawerOpen.value
       }
   
       return {
         fabYoutube,
-  
+        slide,
         leftDrawerOpen,
         search,
   

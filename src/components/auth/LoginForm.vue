@@ -1,3 +1,3 @@
-<template></template>
+<template>hola</template>
 <script></script>
 <style></style>
