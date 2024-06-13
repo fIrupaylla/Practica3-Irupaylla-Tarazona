@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" style="text-align: center">
     <div class="title">
       <q-icon name="ti-heart" color="white" size="35px" />
       Clothes 4You
@@ -83,6 +83,8 @@ body {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-items: center;
 }
 .wrapper .title {
   font-size: 35px;
